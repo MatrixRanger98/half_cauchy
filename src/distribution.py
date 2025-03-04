@@ -1737,20 +1737,3 @@ class landau(object):
     if x_was_just_a_number:
       result = float(result)
     return result
-
-
-  # return 0
-
-  # x_is_finite_indices = np.isfinite(x)
-  # if x_is_finite_indices.any():
-
-  # result[x < x_min] = 0
-  # result[x > x_max] = 1
-  # result[np.isneginf(x)] = 0
-  # result[np.isposinf(x)] = 1
-
-  # result = np.squeeze(result)
-  # if x_was_just_a_number:
-  #   result = float(result)
-  # return result
-
