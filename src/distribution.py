@@ -113,10 +113,9 @@ class hcauchy_mean(object):
       weight = w
     comp = cls.sf(x, weight, precision, check_w=False)
     if precision:
-      comp[0] = 1 - comp[0]
+      return 1 - comp[0], comp[1]
     else:
-      comp = 1 - comp
-    return comp
+      return 1 - comp
 
   @classmethod
   def pdf(cls, x: float | np.float_, w:int | np.int_ | float | np.float_ | Sequence[float | np.float_] | np.ndarray, precision: bool=False, check_w: bool=True) -> float | np.float_ | tuple:
@@ -243,10 +242,9 @@ class harmonic_mean(object):
       weight = w
     comp = cls.sf(x, weight, precision, check_w=False)
     if precision:
-      comp[0] = 1 - comp[0]
+      return 1 - comp[0], comp[1]
     else:
-      comp = 1 - comp
-    return comp
+      return 1 - comp
 
   @classmethod
   def pdf(cls, x: float | np.float_, w: int | np.int_ | float | np.float_ | Sequence[float | np.float_] | np.ndarray, precision: bool=False, check_w: bool=True) -> float | np.float_ | tuple:
